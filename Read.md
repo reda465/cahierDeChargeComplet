@@ -277,4 +277,3 @@ Chaque utilisateur est défini par :
 - Latence < 1 seconde pour les messages
 - Fiabilité de livraison (même hors ligne)
 - Interface simple et intuitive
-- Tolérance aux déconnexions brutales
