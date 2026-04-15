@@ -5,6 +5,7 @@
 L’application permet à plusieurs utilisateurs de communiquer entre eux via :
 
 - Messages texte (temps réel et différé)
+- Message avec photos et video.
 - Appels audio (directs entre deux clients)
 - Appels vidéo (directs entre deux clients)
 - Création et gestion de groupes
@@ -21,7 +22,7 @@ Même s’il n’est pas connecté, à condition qu’il se soit déjà connect�
 
 Le serveur conserve :
 - Son pseudo
-- -MotDePasse
+- -Mot De Passe
 -NomComplet
 - Son historique (messages, invitations, appels manqués)
 
@@ -40,7 +41,6 @@ Le serveur conserve :
   - Communiquent avec le serveur pour :
     - Messages
     - Groupes
-    - Signalisation d’appel
   - Échangent directement les flux audio/vidéo entre eux
 
 ---
@@ -63,7 +63,7 @@ Lors de la première connexion :
   - Sert d’identifiant principal
 
 - **Pseudo :**
-  - Sert d’affichage (non forcément unique)
+  - Sert d’affichage (unique)
 
 - **Mot de passe :**
   - Doit respecter un minimum de sécurité
@@ -114,8 +114,7 @@ Chaque utilisateur est défini par :
 
 - **Username (identifiant unique)**  
 - **Pseudo (affichage utilisateur)**  
-- **Mot de passe (authentification)**  
-- **Adresse IP (information technique)**  
+- **Mot de passe (authentification)** 
 
 ---
 
