@@ -21,7 +21,7 @@ Un utilisateur peut :
 Même s’il n’est pas connecté, à condition qu’il se soit déjà connecté au serveur au moins une fois.
 
 Le serveur conserve :
-- Son pseudo
+- Son numéro Téléphone
 - -Mot De Passe
 -NomComplet
 - Son historique (messages, invitations, appels manqués)
@@ -31,8 +31,7 @@ Le serveur conserve :
 ## 1.1 Architecture générale
 
 - Un **serveur central multithread** :
-  - Gère les connexions
-  - Associe **adresse IP ↔ pseudo**
+  - Gère les connexion
   - Stocke les messages hors ligne
   - Gère les groupes
   - Gère la signalisation des appels
@@ -53,17 +52,13 @@ Lors de la première connexion :
 
 - L’utilisateur doit saisir :
   - **Username**
-  - **Pseudo**
+  - **Numéro Télephone**
   - **Mot de passe**
 
 ### Vérifications :
 
-- **Username :**
-  - Doit être **unique**
-  - Sert d’identifiant principal
-
-- **Pseudo :**
-  - Sert d’affichage (unique)
+- **Numéro Télephone :**
+  -unique
 
 - **Mot de passe :**
   - Doit respecter un minimum de sécurité
@@ -73,7 +68,7 @@ Lors de la première connexion :
 Le serveur enregistre :
 
 - Username  
-- Pseudo  
+- Numéro 
 - Mot de passe (stocké de manière sécurisée)  
 
 ---
@@ -82,7 +77,7 @@ Le serveur enregistre :
 
 L’utilisateur doit saisir :
 
-- **Username**
+- **Numéro Téléphone**
 - **Mot de passe**
 
 ### Vérifications :
@@ -90,13 +85,6 @@ L’utilisateur doit saisir :
 - Le username existe
 - Le mot de passe est correct
 
-### Résultats :
-
-- ✅ Accès autorisé  
-- ❌ Username incorrect → *Utilisateur introuvable*  
-- ❌ Mot de passe incorrect → *Mot de passe incorrect*  
-
----
 
 ### Restauration des données après connexion :
 
@@ -112,8 +100,7 @@ L’utilisateur doit saisir :
 
 Chaque utilisateur est défini par :
 
-- **Username (identifiant unique)**  
-- **Pseudo (affichage utilisateur)**  
+- **Numéro Télephone**  
 - **Mot de passe (authentification)** 
 
 ---
